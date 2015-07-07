@@ -1,0 +1,177 @@
+// =============================================================================
+
+// =UTILITIES/HELPERS
+
+// =============================================================================
+
+
+
+
+// Alignment -------------------------------
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+// Layout ----------------------------------
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  width: 100%;
+}
+
+.over-hidden {
+  overflow: hidden;
+}
+
+// Text ------------------------------------
+
+.text-lg {
+  font-size: 20px;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+// text colors
+
+.text-white {
+  color: $white;
+}
+
+.text-black {
+  color: $black;
+}
+
+.text-gray {
+  color: $gray;
+}
+
+// Backgrounds ------------------------------
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.bg-gray {
+  background-color: $gray;
+}
+
+// striping - direct children of .striped will be... striped
+.striped > :nth-child(even){
+  background-color: $gray;
+}
+
+// Spacing ---------------------------------
+
+.reset {
+  margin: 0;
+  padding: 0;
+}
+
+//  Responsive Spacing Helpers:
+
+// *p,m = padding,margin
+// *a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+// *s,m,l,n = small($space-half),medium($space),large($space-double),none(0)
+
+
+.ptn, .pvn, .pan { padding-top:     0!important; }
+.pts, .pvs, .pas { padding-top:     $space-half; }
+.ptm, .pvm, .pam { padding-top:     $space; }
+.ptl, .pvl, .pal { padding-top:     $space; }
+.prn, .phn, .pan { padding-right:   0!important; }
+.prs, .phs, .pas { padding-right:   $space-half; }
+.prm, .phm, .pam { padding-right:   $space; }
+.prl, .phl, .pal { padding-right:   $space; }
+.pbn, .pvn, .pan { padding-bottom:  0!important; }
+.pbs, .pvs, .pas { padding-bottom:  $space-half; }
+.pbm, .pvm, .pam { padding-bottom:  $space; }
+.pbl, .pvl, .pal { padding-bottom:  $space; }
+.pln, .phn, .pan { padding-left:    0!important; }
+.pls, .phs, .pas { padding-left:    $space-half; }
+.plm, .phm, .pam { padding-left:    $space; }
+.pll, .phl, .pal { padding-left:    $space; }
+.mtn, .mvn, .man { margin-top:      0!important; }
+.mts, .mvs, .mas { margin-top:      $space-half; }
+.mtm, .mvm, .mam { margin-top:      $space; }
+.mtl, .mvl, .mal { margin-top:      $space; }
+.mrn, .mhn, .man { margin-right:    0!important; }
+.mrs, .mhs, .mas { margin-right:    $space-half; }
+.mrm, .mhm, .mam { margin-right:    $space; }
+.mrl, .mhl, .mal { margin-right:    $space; }
+.mbn, .mvn, .man { margin-bottom:   0!important; }
+.mbs, .mvs, .mas { margin-bottom:   $space-half; }
+.mbm, .mvm, .mam { margin-bottom:   $space; }
+.mbl, .mvl, .mal { margin-bottom:   $space; }
+.mln, .mhn, .man { margin-left:     0!important; }
+.mls, .mhs, .mas { margin-left:     $space-half; }
+.mlm, .mhm, .mam { margin-left:     $space; }
+.mll, .mhl, .mal { margin-left:     $space; }
+
+
+@include breakpoint(sm){
+
+  .ptl, .pvl, .pal { padding-top:     $space-double; }
+  .prl, .phl, .pal { padding-right:   $space-double; }
+  .pbl, .pvl, .pal { padding-bottom:  $space-double; }
+  .pll, .phl, .pal { padding-left:    $space-double; }
+  .mtl, .mvl, .mal { margin-top:      $space-double; }
+  .mrl, .mhl, .mal { margin-right:    $space-double; }
+  .mbl, .mvl, .mal { margin-bottom:   $space-double; }
+  .mll, .mhl, .mal { margin-left:     $space-double; }
+}
+
+// Accessibility -----------------------------
+
+.sronly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}

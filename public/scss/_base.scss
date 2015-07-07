@@ -1,0 +1,39 @@
+// =============================================================================
+
+// =BASE
+
+// =============================================================================
+
+
+
+
+// Base element selector styles -------------
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px/1.2em $font-reg, sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+hr {
+  border-bottom: none;
+  border-top: 1px solid $gray;
+  margin: 0;
+}
