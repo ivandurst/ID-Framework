@@ -1,6 +1,6 @@
 # ID Framework
 
-Quick-start gulp framework with sass, js uglify, img compressor, html partials, live reload, and php server. [Rename this file and description]
+Quick-start gulp framework with sass, js uglify, img compressor, html partials, live reload, and php server.
 
 ## Install
 
