@@ -14,11 +14,11 @@ $pad: 20px;
 .grid {
   display: flex;
   flex-direction: column;
-  @include breakpoint(sm){
+  @include breakpoint(sm) {
     flex-direction: row;
   }
 }
-@include breakpoint(sm){
+@include breakpoint(sm) {
   .col-1-3 {
     width: 33.33%;
   }
